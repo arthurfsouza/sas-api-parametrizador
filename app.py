@@ -1,12 +1,14 @@
 import json
 import logging
 from flask import Flask, render_template, request, jsonify, logging as flog
+from flask_cors import CORS
 
 from resources.request_token import RequestToken
 from resources.request_sid import RequestSID
 from resources.request_folder import RequestFOLDER
 
 app = Flask(__name__, template_folder="./templates")
+CORS(app)
 app.config["JSON_AS_ASCII"] = False
 
 def logging_config(req_id=""):
