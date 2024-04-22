@@ -35,9 +35,8 @@ class RequestFOLDER:
             }
 
             try:
-                response = requests.post(
+                response = requests.get(
                     urlFOLDER,
-                    data=json.dumps({ }, ensure_ascii=False),
                     headers=headersFOLDER,
                     verify=False,
                     timeout=20
