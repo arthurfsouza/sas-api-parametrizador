@@ -1,0 +1,7 @@
+127.0.0.1       sasbap	sasbap.demo.sas.com	localhost
+
+13.90.73.61 demoserver.internal.cloudapp.net tenant1.demoserver.internal.cloudapp.net tenant2.demoserver.internal.cloudapp.net tenant3.demoserver.internal.cloudapp.net tenant4.demoserver.internal.cloudapp.net tenant5.demoserver.internal.cloudapp.net tenant6.demoserver.internal.cloudapp.net tenant7.demoserver.internal.cloudapp.net tenant8.demoserver.internal.cloudapp.net tenant9.demoserver.internal.cloudapp.net
+# SIMS NTier Entries
+10.96.1.64 sasbap.demo.sas.com
+10.96.7.98 sasserver.demo.sas.com
+# END SIMS NTier Entries

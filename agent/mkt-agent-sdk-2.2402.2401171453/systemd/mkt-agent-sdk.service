@@ -1,0 +1,17 @@
+[Unit]
+Description=SAS Customer Intelligence 360 agent
+After=network.target
+
+[Service]
+User=<login id of user that is to start Customer Intelligence 360 agent>
+WorkingDirectory=<Installation directory for Customer Intelligence 360 agent>
+StandardOutput=journal
+StandardError=journal
+EnvironmentFile=<Installation directory for Customer Intelligence 360 agent>/systemd/mkt-agent-sdk
+
+ExecStart=<Installation directory for Customer Intelligence 360 agent>/bin/mkt-agent-sdk
+
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

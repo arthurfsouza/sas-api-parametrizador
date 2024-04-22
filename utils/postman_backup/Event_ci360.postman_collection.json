@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "ffbe105e-066a-4786-9b94-6577fec8fd9d",
+		"name": "Event_ci360",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14416948",
+		"_collection_link": "https://restless-moon-106866.postman.co/workspace/SAS---Collections~dc731c42-6a94-42ba-bb4c-efafc304c03e/collection/14416948-ffbe105e-066a-4786-9b94-6577fec8fd9d?action=share&source=collection_link&creator=14416948"
+	},
+	"item": [
+		{
+			"name": "sid_teste",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJRCI6IjQ3MDI5ZTcxY2IwMDAxM2QzNTFmZjJjMiJ9.Tnf5zDlrMBQzx2GvtHoP7QaToOfFrZETW5ywm0XP5p8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eventName\": \"lucarm_sid_score\",\r\n    \"login_id\": \"367.734.378-06\",\r\n    \"sid_score\":4.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://extapigwservice-demo.cidemo.sas.com/marketingGateway/events",
+					"protocol": "https",
+					"host": [
+						"extapigwservice-demo",
+						"cidemo",
+						"sas",
+						"com"
+					],
+					"path": [
+						"marketingGateway",
+						"events"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

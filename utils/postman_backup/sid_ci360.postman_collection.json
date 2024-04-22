@@ -1,0 +1,353 @@
+{
+	"info": {
+		"_postman_id": "db8ac629-58ca-4f3b-8318-11760e29bb65",
+		"name": "sid_ci360",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12965331"
+	},
+	"item": [
+		{
+			"name": "call_sid",
+			"item": [
+				{
+					"name": "token_by_username",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "sas.cli",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "viadmin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Orion123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "tenant1.sasserver.demo.sas.com/SASLogon/oauth/token",
+							"host": [
+								"tenant1",
+								"sasserver",
+								"demo",
+								"sas",
+								"com"
+							],
+							"path": [
+								"SASLogon",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vbG9jYWxob3N0L1NBU0xvZ29uL3Rva2VuX2tleXMiLCJraWQiOiJsZWdhY3ktdG9rZW4ta2V5IiwidHlwIjoiSldUIn0.eyJqdGkiOiI2MTI0N2YzMDg3NzY0MzRhOTNkZTYwODRjMzFmMmVlYiIsImV4dF9pZCI6InVpZD12aWFkbWluLG91PXVzZXJzLG91PXByb3ZpZGVyLGRjPXNhc3NlcnZlcixkYz1kZW1vLGRjPXNhcyxkYz1jb20iLCJzdWIiOiIzNDAxNTRmNy00MGJiLTQ2NTItYmJhMC00ZmFlYzA2YWUxMzMiLCJzY29wZSI6WyJjbGllbnRzLnJlYWQiLCJjbGllbnRzLnNlY3JldCIsInVhYS5yZXNvdXJjZSIsIm9wZW5pZCIsInVhYS5hZG1pbiIsImNsaWVudHMuYWRtaW4iLCJ2aWFkbWluIiwic2NpbS5yZWFkIiwidWFhLnVzZXIiLCJTQVNBZG1pbmlzdHJhdG9ycyIsImNsaWVudHMud3JpdGUiLCJzY2ltLndyaXRlIiwic2FzYWRtaW5zIl0sImNsaWVudF9pZCI6InNhcy5jbGkiLCJjaWQiOiJzYXMuY2xpIiwiYXpwIjoic2FzLmNsaSIsImdyYW50X3R5cGUiOiJwYXNzd29yZCIsInVzZXJfaWQiOiIzNDAxNTRmNy00MGJiLTQ2NTItYmJhMC00ZmFlYzA2YWUxMzMiLCJvcmlnaW4iOiJsZGFwIiwidXNlcl9uYW1lIjoidmlhZG1pbiIsImVtYWlsIjoidmlhZG1pbkBzYXNzZXJ2ZXIuZGVtby5zYXMuY29tIiwiYXV0aF90aW1lIjoxNzAxOTc2MTY2LCJyZXZfc2lnIjoiOTc0YWFiYmUiLCJpYXQiOjE3MDE5NzYxNjYsImV4cCI6MTcwMTk5MDU2NiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9TQVNMb2dvbi9vYXV0aC90b2tlbiIsInppZCI6InVhYSIsImF1ZCI6WyJzY2ltIiwiY2xpZW50cyIsInNhcy4qIiwidWFhIiwib3BlbmlkIiwic2FzLmNsaSJdfQ.Z863NeDAfj0gGTsvFTGnZxzGXts8-wr3mUcnNaW3MH2RwNxyzrstDEViLpnb6d6z1L25kxi-FfRvaEy5IqvuA_DlZmzBAoVTe4U09uW5OjoogsdItFvoRYLiTLt0WJ-RiK8iHNS_nSKstG5F4kHOkZ1ezCJEjyD5dRBvuB5MFg-xIZnjdlZWyaPDgMfPZlxVHAzeOe0KmC_Lmyaagxl2X1vPpOsbEP7GhadatStgBUnps6zduNxzUQ8907IN0w0_qIdqGf8GHbVrpCdLdSy2x22LWPWSawVFNjHYuQzO3qIwJKpG1nMv8tuQl_-hv1wayipmL0_c988eFDxpA6xGtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "If-Match",
+								"value": "\"lpjt3oxl\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"inputs\":\r\n        [\r\n            {\r\n                \"name\": \"test_var_\",\r\n                \"value\": 2\r\n            }\r\n        ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "tenant1.sasserver.demo.sas.com/microanalyticScore/modules/test_type1_0/steps/execute",
+							"host": [
+								"tenant1",
+								"sasserver",
+								"demo",
+								"sas",
+								"com"
+							],
+							"path": [
+								"microanalyticScore",
+								"modules",
+								"test_type1_0",
+								"steps",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "consul",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Consul-Token",
+						"value": "f873c640-4e1f-4b9b-b06a-158b2ef6cfe3",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "tenant1.sasserver.demo.sas.com/SASLogon/oauth/clients/consul?callback=false&serviceId=app",
+					"host": [
+						"tenant1",
+						"sasserver",
+						"demo",
+						"sas",
+						"com"
+					],
+					"path": [
+						"SASLogon",
+						"oauth",
+						"clients",
+						"consul"
+					],
+					"query": [
+						{
+							"key": "callback",
+							"value": "false"
+						},
+						{
+							"key": "serviceId",
+							"value": "app"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_client",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vbG9jYWxob3N0L1NBU0xvZ29uL3Rva2VuX2tleXMiLCJraWQiOiJsZWdhY3ktdG9rZW4ta2V5IiwidHlwIjoiSldUIn0.eyJqdGkiOiJjODM0ZDQ0ZjRhMzQ0NGFlOGVhM2MzNWI4NzM5ZmU5NCIsInN1YiI6InNhcy5hZG1pbiIsImF1dGhvcml0aWVzIjpbImNsaWVudHMucmVhZCIsImNsaWVudHMuc2VjcmV0IiwidWFhLnJlc291cmNlIiwiY2xpZW50cy53cml0ZSIsInVhYS5hZG1pbiIsImNsaWVudHMuYWRtaW4iLCJzY2ltLndyaXRlIiwic2NpbS5yZWFkIl0sInNjb3BlIjpbImNsaWVudHMucmVhZCIsImNsaWVudHMud3JpdGUiLCJ1YWEuYWRtaW4iXSwiY2xpZW50X2lkIjoic2FzLmFkbWluIiwiY2lkIjoic2FzLmFkbWluIiwiYXpwIjoic2FzLmFkbWluIiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiJjNzYzOTZkZiIsImlhdCI6MTcwMTQ0MDQxNSwiZXhwIjoxNzAxNDU0ODE1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0L1NBU0xvZ29uL29hdXRoL3Rva2VuIiwiemlkIjoidWFhIiwiYXVkIjpbImNsaWVudHMiLCJzYXMuKiIsInVhYSIsInNhcy5hZG1pbiJdfQ.VV8C2AgOK-cNT2H-5lpSqiRKHkZn-YHjY7nL5aZJQ__GIl-ad113QwFqSwWfjKZsoufyzMDgLoZUw8_4DzUwwkD4NF2FuGFRsrxLcSg91NAGxoUcK1_t-08gH42uTn7Z4EJy96ppwgZYxlPtskmiYm5g11BR4-VVy2ab2qI3D6xvkspZeKdLD1UnGH3Rewp0bNjpIDIg1F69DOiw6X4fkUL9HU-AiLKOI6GxmVBM-kZxJ7EYZG23UXtdo5ruTBGj1eexAj3TmKsKuaR4uU7o6Rm2SisVPt5NHtklnEdPAiwOuCGELFizMciAGa_2DC2Yt5atwkX2jV8Ge_6WOdVhog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"client_id\": \"testClient2\", \r\n    \"client_secret\": \"Orion123\", \r\n    \"scope\": [\"openid\"],\r\n    \"authorized_grant_types\": [\"client_credentials\", \"refresh_token\"],\r\n    \"access_token_validity\": 43200,\r\n    \"redirect_uri\": \"urn:ietf:wg:oauth:2.0:oob\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "tenant1.sasserver.demo.sas.com/SASLogon/oauth/clients",
+					"host": [
+						"tenant1",
+						"sasserver",
+						"demo",
+						"sas",
+						"com"
+					],
+					"path": [
+						"SASLogon",
+						"oauth",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "token_username",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "sas.cli",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "viadmin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Orion123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "tenant1.sasserver.demo.sas.com/SASLogon/oauth/token",
+					"host": [
+						"tenant1",
+						"sasserver",
+						"demo",
+						"sas",
+						"com"
+					],
+					"path": [
+						"SASLogon",
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "token_client",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "testClient",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "Orion123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "tenant1.sasserver.demo.sas.com/SASLogon/oauth/token",
+					"host": [
+						"tenant1",
+						"sasserver",
+						"demo",
+						"sas",
+						"com"
+					],
+					"path": [
+						"SASLogon",
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vbG9jYWxob3N0L1NBU0xvZ29uL3Rva2VuX2tleXMiLCJraWQiOiJsZWdhY3ktdG9rZW4ta2V5IiwidHlwIjoiSldUIn0.eyJqdGkiOiJiYTM0NzA5M2NmNDg0YjFjYjIxOTZmMWExYjk2MWZmYyIsImV4dF9pZCI6InVpZD1zYXNkZW1vLG91PXBlb3BsZSxkYz1leGFtcGxlLGRjPWNvbSIsInN1YiI6ImEwY2FlYzdiLTQxNWItNDU1MS05ZWZkLTM2YmQxMjU4YjA3NSIsInNjb3BlIjpbIkRhdGFCdWlsZGVycyIsIkFwcGxpY2F0aW9uQWRtaW5pc3RyYXRvcnMiLCJTQVNTY29yZVVzZXJzIiwiQ2F0YWxvZy5TdWJqZWN0TWF0dGVyRXhwZXJ0cyIsImNsaWVudHMucmVhZCIsImNsaWVudHMuc2VjcmV0IiwidWFhLnJlc291cmNlIiwib3BlbmlkIiwiRXNyaVVzZXJzIiwidWFhLmFkbWluIiwiY2xpZW50cy5hZG1pbiIsInNjaW0ucmVhZCIsInVhYS51c2VyIiwiU0FTQWRtaW5pc3RyYXRvcnMiLCJjbGllbnRzLndyaXRlIiwiQ29tcHV0ZVNlcnZpY2VBY2NvdW50VXNlcnMiLCJzY2ltLndyaXRlIiwiYWRtaW5zIiwiQ0FTSG9zdEFjY291bnRSZXF1aXJlZCJdLCJjbGllbnRfaWQiOiJzYXMuY2xpIiwiY2lkIjoic2FzLmNsaSIsImF6cCI6InNhcy5jbGkiLCJncmFudF90eXBlIjoicGFzc3dvcmQiLCJ1c2VyX2lkIjoiYTBjYWVjN2ItNDE1Yi00NTUxLTllZmQtMzZiZDEyNThiMDc1Iiwib3JpZ2luIjoibGRhcCIsInVzZXJfbmFtZSI6InNhc2RlbW8iLCJlbWFpbCI6InNhc2RlbW9AZXhhbXBsZS5jb20iLCJhdXRoX3RpbWUiOjE3MDQ5MDAwMjcsInJldl9zaWciOiJiMDdlNDJlIiwiaWF0IjoxNzA0OTAwMDI3LCJleHAiOjE3MDQ5MTQ0MjcsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3QvU0FTTG9nb24vb2F1dGgvdG9rZW4iLCJ6aWQiOiJ1YWEiLCJhdWQiOlsic2NpbSIsImNsaWVudHMiLCJzYXMuKiIsInVhYSIsIm9wZW5pZCIsInNhcy5jbGkiLCJDYXRhbG9nIl19.BmpU_YwTllfES2KA5DX42-KxrnNSkcXCwzKedmagTFG5Xbv4dbcnvwEywEXgzeoAKgCtVnr_POWrI3lzFtvKQVec38OKvyPNjZIoeoElyEmfGRQCQmzhzd4yS_YDGz0ieAQL80veWaSy5kg--fd-A-r8rfQkVGZ7YGCzCcj3BqG-pFHLaSP7cssgRz7gjvOFds62KW0UTPez6uCS9anwybmUrkyCZbscPA0X5CW505Gn_AQCJAVAdhiVMimouYhLFnzloqqnvdbt70Nhp8SB9idCk77ncfSMlKRp9RwdRMBTqFpG1k4mLce25HgjoA2Na6CClhexm5i3ygDsKaI-dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "If-Match",
+						"value": "\"lpjt3oxl\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\":\r\n        [\r\n            {\r\n                \"name\": \"input_test_\",\r\n                \"value\": 2\r\n            }\r\n        ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://server.demo.sas.com//microanalyticScore/modules/santander_test/steps/execute",
+					"protocol": "http",
+					"host": [
+						"server",
+						"demo",
+						"sas",
+						"com"
+					],
+					"path": [
+						"",
+						"microanalyticScore",
+						"modules",
+						"santander_test",
+						"steps",
+						"execute"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

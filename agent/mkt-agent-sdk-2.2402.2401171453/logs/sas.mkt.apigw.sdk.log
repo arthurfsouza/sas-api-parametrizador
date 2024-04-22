@@ -1,0 +1,141 @@
+2024-03-07 07:12:14,626 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.Application - Starting Application v2.2402.2401171453 using Java 21.0.2 on SASBAP with PID 4192 (C:\Users\sas\Documents\mkt-agent-sdk-2.2402.2401171453\lib\mkt-agent-springboot-2.2402.2401171453-plain.jar started by sas in C:\Users\sas\Documents\mkt-agent-sdk-2.2402.2401171453\bin)
+2024-03-07 07:12:14,628 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.Application - The following 1 profile is active: "agent"
+2024-03-07 07:12:20,306 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.Application - Started Application in 6.741 seconds (JVM running for 8.379)
+2024-03-07 07:12:20,441 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.AgentSystemManager - *** Agent System Manager (ASM) startup() ***
+2024-03-07 07:12:20,786 INFO  [main] .streaming.agent.listener.stream.ConfigurationEventProcessor - Agent remote configuration enabled
+2024-03-07 07:12:20,789 INFO  [main] .streaming.agent.listener.stream.ConfigurationEventProcessor - This Agent is set for *remote* configuration.
+2024-03-07 07:12:21,936 ERROR [main] as.mkt.apigw.sdk.streaming.agent.config.ConfigurationService - Remote configuration of the Direct Marketing plugin has failed.
+2024-03-07 07:12:21,997 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.Application - Starting the CI360 Agent...
+2024-03-07 07:12:22,178 INFO  [ASMExecutor-10] k.streaming.agent.connection.AuthenticationConnectionManager - Connecting to Customer Intelligence event stream
+2024-03-07 07:12:22,319 INFO  [et@423004961-68] k.streaming.agent.connection.AuthenticationConnectionManager - Connection to Customer Intelligence event stream successful
+2024-03-07 07:12:22,357 INFO  [ASMExecutor-22] com.sas.mkt.apigw.sdk.streaming.agent.AgentSystemManager - *** Agent System Manager (ASM) successful startup. ***
+2024-03-07 07:12:22,450 INFO  [ASMExecutor-23] w.sdk.streaming.agent.listener.AgentVersionInfoEventListener - General agent version: v2402
+Gateway version: v2402
+General agent versions supported by gateway: v2402,v2401,v2312,v2311,v2310,v2309,v2308,v2307,v2306
+General agent version(s) losing gateway support within 30 days: v2305,v2304,v2303
+General agent version support status: Supported
+
+2024-03-07 07:13:04,779 INFO  [Thread-20] com.sas.mkt.apigw.sdk.streaming.agent.AgentSystemManager - *** Agent System Manager (ASM) shutdown() ***
+2024-03-07 07:13:04,790 INFO  [ASMExecutor-35] k.streaming.agent.connection.AuthenticationConnectionManager - Stopping event stream connection
+2024-03-07 07:13:04,790 INFO  [ASMExecutor-36] com.sas.mkt.apigw.sdk.streaming.agent.AgentSystemManager - *** Agent System Manager (ASM) successful shutdown. ***
+2024-03-07 07:15:03,595 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.Application - Starting Application v2.2402.2401171453 using Java 21.0.2 on SASBAP with PID 1684 (C:\Users\sas\Documents\mkt-agent-sdk-2.2402.2401171453\lib\mkt-agent-springboot-2.2402.2401171453-plain.jar started by sas in C:\Users\sas\Documents\mkt-agent-sdk-2.2402.2401171453\bin)
+2024-03-07 07:15:03,598 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.Application - The following 1 profile is active: "agent"
+2024-03-07 07:15:07,293 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.Application - Started Application in 4.374 seconds (JVM running for 4.911)
+2024-03-07 07:15:07,407 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.AgentSystemManager - *** Agent System Manager (ASM) startup() ***
+2024-03-07 07:15:07,586 INFO  [main] .streaming.agent.listener.stream.ConfigurationEventProcessor - Agent remote configuration enabled
+2024-03-07 07:15:07,592 INFO  [main] .streaming.agent.listener.stream.ConfigurationEventProcessor - This Agent is set for *remote* configuration.
+2024-03-07 07:15:08,306 ERROR [main] as.mkt.apigw.sdk.streaming.agent.config.ConfigurationService - Remote configuration of the Direct Marketing plugin has failed.
+2024-03-07 07:15:08,364 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.Application - Starting the CI360 Agent...
+2024-03-07 07:15:08,410 INFO  [ASMExecutor-10] k.streaming.agent.connection.AuthenticationConnectionManager - Connecting to Customer Intelligence event stream
+2024-03-07 07:15:08,530 INFO  [t@1315048332-71] k.streaming.agent.connection.AuthenticationConnectionManager - Connection to Customer Intelligence event stream successful
+2024-03-07 07:15:08,564 INFO  [ASMExecutor-22] com.sas.mkt.apigw.sdk.streaming.agent.AgentSystemManager - *** Agent System Manager (ASM) successful startup. ***
+2024-03-07 07:15:08,594 INFO  [ASMExecutor-23] w.sdk.streaming.agent.listener.AgentVersionInfoEventListener - General agent version: v2402
+Gateway version: v2402
+General agent versions supported by gateway: v2402,v2401,v2312,v2311,v2310,v2309,v2308,v2307,v2306
+General agent version(s) losing gateway support within 30 days: v2305,v2304,v2303
+General agent version support status: Supported
+
+2024-03-07 07:16:08,997 INFO  [Spring Shell] .sas.mkt.apigw.sdk.streaming.agent.cli.AgentCommandsForShell - metrics = [io.micrometer.core.instrument.internal.DefaultGauge@caa4e924, io.micrometer.core.instrument.internal.DefaultGauge@d247c546, io.micrometer.core.instrument.internal.DefaultGauge@9a10f016, io.micrometer.core.instrument.MeterRegistry$1@57b517ce, io.micrometer.core.instrument.internal.DefaultGauge@3235373c, io.micrometer.core.instrument.internal.DefaultGauge@4feb677, io.micrometer.core.instrument.cumulative.CumulativeCounter@e6aaa5a1, io.micrometer.core.instrument.MeterRegistry$1@477932dd, io.micrometer.core.instrument.internal.DefaultGauge@fb8dfb1e, io.micrometer.core.instrument.internal.DefaultGauge@eb4a45df, io.micrometer.core.instrument.cumulative.CumulativeCounter@b93123a4, io.micrometer.core.instrument.internal.DefaultGauge@1fbbba2c, io.micrometer.core.instrument.internal.DefaultGauge@c9869a9b, io.micrometer.core.instrument.internal.DefaultGauge@2eb4e5a9, io.micrometer.core.instrument.internal.DefaultGauge@5ff7d8e8, io.micrometer.core.instrument.internal.DefaultGauge@1a41b35e, io.micrometer.core.instrument.internal.DefaultGauge@e1cfe76f, io.micrometer.core.instrument.cumulative.CumulativeTimer@c0ea514a, io.micrometer.core.instrument.cumulative.CumulativeTimer@5c80b1a0, io.micrometer.core.instrument.internal.DefaultGauge@35263687, io.micrometer.core.instrument.internal.DefaultGauge@fd8589a4, io.micrometer.core.instrument.internal.DefaultGauge@d18676a5, io.micrometer.core.instrument.internal.DefaultGauge@f4269383, io.micrometer.core.instrument.cumulative.CumulativeFunctionCounter@2da9a00e, io.micrometer.core.instrument.internal.DefaultGauge@aef5415d, io.micrometer.core.instrument.internal.DefaultGauge@1f2cab87, io.micrometer.core.instrument.internal.DefaultGauge@f45cd1f0, io.micrometer.core.instrument.internal.DefaultGauge@5f65b4d4, io.micrometer.core.instrument.cumulative.CumulativeCounter@db9493a6, io.micrometer.core.instrument.internal.DefaultGauge@c0f65bc, io.micrometer.core.instrument.internal.DefaultGauge@3d5d6f68, io.micrometer.core.instrument.cumulative.CumulativeCounter@b2d0c4e5, io.micrometer.core.instrument.cumulative.CumulativeFunctionCounter@aa43c1c, io.micrometer.core.instrument.MeterRegistry$1@2b188197, io.micrometer.core.instrument.cumulative.CumulativeCounter@b85e0467, io.micrometer.core.instrument.cumulative.CumulativeCounter@908ea135, io.micrometer.core.instrument.internal.DefaultGauge@24b9075, io.micrometer.core.instrument.internal.DefaultGauge@161879a7, io.micrometer.core.instrument.internal.DefaultGauge@650fdd4e, io.micrometer.core.instrument.internal.DefaultGauge@64089849, io.micrometer.core.instrument.cumulative.CumulativeFunctionCounter@2ad3cec, io.micrometer.core.instrument.cumulative.CumulativeCounter@400ce94d, io.micrometer.core.instrument.internal.DefaultGauge@4eebf02f, io.micrometer.core.instrument.cumulative.CumulativeCounter@d40735c2, io.micrometer.core.instrument.cumulative.CumulativeCounter@b2ca970d, io.micrometer.core.instrument.internal.DefaultGauge@999cf3d4, io.micrometer.core.instrument.internal.DefaultGauge@c0bba6f2, io.micrometer.core.instrument.cumulative.CumulativeCounter@5ebf6c76, io.micrometer.core.instrument.cumulative.CumulativeFunctionCounter@eb497d83, io.micrometer.core.instrument.internal.DefaultGauge@e570273c, io.micrometer.core.instrument.cumulative.CumulativeFunctionCounter@caec9e20, io.micrometer.core.instrument.internal.DefaultGauge@72ad77e0, io.micrometer.core.instrument.cumulative.CumulativeTimer@4aff1c31, io.micrometer.core.instrument.internal.DefaultGauge@6ee1fb32, io.micrometer.core.instrument.internal.DefaultGauge@a938f6eb, io.micrometer.core.instrument.internal.DefaultGauge@60d0b904, io.micrometer.core.instrument.internal.DefaultGauge@8f4f5b9b, io.micrometer.core.instrument.internal.DefaultGauge@73120944, io.micrometer.core.instrument.internal.DefaultGauge@b2a010f7, io.micrometer.core.instrument.internal.DefaultGauge@42c3d119, io.micrometer.core.instrument.MeterRegistry$1@34c0cd66, io.micrometer.core.instrument.internal.DefaultGauge@fca6adc6, io.micrometer.core.instrument.internal.DefaultGauge@551e75ff, io.micrometer.core.instrument.internal.DefaultGauge@d98f0b6e, io.micrometer.core.instrument.cumulative.CumulativeCounter@763aee5b, io.micrometer.core.instrument.cumulative.CumulativeCounter@7efe969a, io.micrometer.core.instrument.internal.DefaultGauge@cf0cdd6b, io.micrometer.core.instrument.internal.DefaultGauge@d3908cfa, io.micrometer.core.instrument.internal.DefaultGauge@f623a8c8, io.micrometer.core.instrument.internal.DefaultGauge@ef6d8201, io.micrometer.core.instrument.internal.DefaultGauge@6230315d, io.micrometer.core.instrument.internal.DefaultGauge@6170239e, io.micrometer.core.instrument.internal.DefaultGauge@44fe3d11, io.micrometer.core.instrument.internal.DefaultGauge@a2fbb00b, io.micrometer.core.instrument.internal.DefaultGauge@784e053f, io.micrometer.core.instrument.internal.DefaultGauge@cba45457, io.micrometer.core.instrument.internal.DefaultGauge@b5868075, io.micrometer.core.instrument.internal.DefaultGauge@9308dd7b, io.micrometer.core.instrument.MeterRegistry$1@4bb4a757, io.micrometer.core.instrument.internal.DefaultGauge@858bf17d, io.micrometer.core.instrument.internal.DefaultGauge@4646a4bc, io.micrometer.core.instrument.internal.DefaultGauge@3b02f079, io.micrometer.core.instrument.cumulative.CumulativeCounter@b849c8b2, io.micrometer.core.instrument.internal.DefaultGauge@ff55a0ae, io.micrometer.core.instrument.internal.DefaultGauge@109ba265, io.micrometer.core.instrument.internal.DefaultGauge@42922cec]
+2024-03-07 07:16:08,998 INFO  [Spring Shell] .sas.mkt.apigw.sdk.streaming.agent.cli.AgentCommandsForShell - metricsString = {
+    "counter.agent.shell.command.metrics": "1.0",
+    "counter.agent.stream.consumer.events.configuration": "0.0",
+    "counter.agent.stream.consumer.events.configurationUpdateNotOK": "0.0",
+    "counter.agent.stream.consumer.events.configurationUpdateOK": "0.0",
+    "counter.agent.stream.consumer.events.health.status": "0.0",
+    "counter.agent.stream.consumer.events.health.status.response": "0.0",
+    "jvm.gc.memory.allocated": "8.5983232E7",
+    "jvm.gc.memory.promoted": "8388608.0",
+    "logback.events": "0.0"
+}
+2024-03-07 07:17:05,648 INFO  [ASMExecutor-25] reaming.agent.plugin.listener.thirdparty.ConnectorsProcessor - rawUrl=https%3A%2F%2Fdemoserver.internal.cloudapp.net%2FSASLogon%2Foauth%2Ftoken, payload=abZy8000000rkXBo3w/xfr3G[Wn1@*oA?.=I=9G7By[#Sf-Z.X6@SbM000, method=POST, decodedUrlTxt=https://demoserver.internal.cloudapp.net/SASLogon/oauth/token
+2024-03-07 07:17:05,654 INFO  [ASMExecutor-25] mkt.apigw.sdk.streaming.agent.event.util.GatewayEventFactory - decode - z85EncodedJSON length: 58, decoded jsonString length: 29
+2024-03-07 07:17:05,841 ERROR [ASMExecutor-25] reaming.agent.plugin.listener.thirdparty.ConnectorsProcessor - Error handling the request, inputPayload=AgentRoutingRequestPayload [requestId=31566baa-28e4-4bbe-b0b7-b5e096fa09e5, params={grant_type=client_credentials}, headers=[Authorization:"Basic Y2lfY2xpZW50Ok9yaW9uMTIz", content-length:"29", ci360-tenant-moniker:"YmN0MDY=", ci360-connector-target-url:"https%3A%2F%2Fdemoserver.internal.cloudapp.net%2FSASLogon%2Foauth%2Ftoken", ci360-connector-target-authorization:"Basic Y2lfY2xpZW50Ok9yaW9uMTIz", ci360-connector-proxy-url:"http%3A%2F%2Fconnector-ecotraining.ci360.sas.com%3A8080%2FconnectorService%2Fconnectors%2FproxiedTargetInvocations", content-type:"application/x-www-form-urlencoded", accept-encoding:"gzip, deflate", user-agent:"python-requests/2.31.0", accept:"application/json", ci360-connector-agent-key:"e55aaeee-86e1-42d1-bd00-5fe6d1f04a6c"], body=abZy8000000rkXBo3w/xfr3G[Wn1@*oA?.=I=9G7By[#Sf-Z.X6@SbM000, httpMethod=POST, tenantId=8356, eventName=connector-agent-proxy-event, connectorAgent=e55aaeee-86e1-42d1-bd00-5fe6d1f04a6c]
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://demoserver.internal.cloudapp.net/SASLogon/oauth/token": PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target; nested exception is javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:666)
+	at com.sas.mkt.apigw.sdk.streaming.agent.plugin.listener.thirdparty.ConnectorsProcessor.handleEvent(ConnectorsProcessor.java:163)
+	at com.sas.mkt.apigw.sdk.streaming.agent.plugin.listener.thirdparty.ConnectorsProcessor$$FastClassBySpringCGLIB$$e8335c37.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:647)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:467)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:363)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 12 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:631)
+	... 39 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+	... 44 common frames omitted
+2024-03-07 07:17:05,844 WARN  [ASMExecutor-25] com.sas.mkt.apigw.sdk.streaming.agent.AgentSystemManager - ASM handleUncaughtException - 
+Method Name::handleEvent
+params::
+	{"tenantId":8356,"attributes":{"extendedCustomEventWithRevenueFlag":"false","internal_tenant_id":"8356","internalTenantId":"8356","connector-agent-proxy-event":"{\"connectorAgent\":\"e55aaeee-86e1-42d1-bd00-5fe6d1f04a6c\",\"headers\":{\"Authorization\":[\"Basic Y2lfY2xpZW50Ok9yaW9uMTIz\"],\"content-length\":[\"29\"],\"ci360-tenant-moniker\":[\"YmN0MDY=\"],\"ci360-connector-target-url\":[\"https%3A%2F%2Fdemoserver.internal.cloudapp.net%2FSASLogon%2Foauth%2Ftoken\"],\"host\":[\"connector-ecotraining.ci360.sas.com:8080\"],\"ci360-connector-target-authorization\":[\"Basic Y2lfY2xpZW50Ok9yaW9uMTIz\"],\"ci360-connector-proxy-url\":[\"http%3A%2F%2Fconnector-ecotraining.ci360.sas.com%3A8080%2FconnectorService%2Fconnectors%2FproxiedTargetInvocations\"],\"content-type\":[\"application/x-www-form-urlencoded\"],\"accept-encoding\":[\"gzip, deflate\"],\"user-agent\":[\"python-requests/2.31.0\"],\"accept\":[\"application/json\"],\"ci360-connector-agent-key\":[\"e55aaeee-86e1-42d1-bd00-5fe6d1f04a6c\"]},\"requestId\":\"31566baa-28e4-4bbe-b0b7-b5e096fa09e5\",\"tenantId\":\"8356\",\"eventName\":\"connector-agent-proxy-event\",\"params\":{\"grant_type\":\"client_credentials\"},\"body\":\"abZy8000000rkXBo3w/xfr3G[Wn1@*oA?.=I=9G7By[#Sf-Z.X6@SbM000\",\"httpMethod\":\"POST\"}","eventName":"connector-agent-proxy-event","event":"connector-agent-proxy-event","eventname":"connector-agent-proxy-event"}}
+	
+Exception occurred::
+java.lang.NullPointerException: Cannot invoke "org.springframework.http.client.ClientHttpResponse.getHeaders()" because the return value of "com.sas.mkt.apigw.sdk.streaming.agent.plugin.listener.thirdparty.ConnectorsProcessor$ResponseErrorHandler.getResponse()" is null
+	at com.sas.mkt.apigw.sdk.streaming.agent.plugin.listener.thirdparty.ConnectorsProcessor.handleEvent(ConnectorsProcessor.java:174)
+	at com.sas.mkt.apigw.sdk.streaming.agent.plugin.listener.thirdparty.ConnectorsProcessor$$FastClassBySpringCGLIB$$e8335c37.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-03-26 08:21:27,930 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.Application - Starting Application v2.2402.2401171453 using Java 22 on SASBAP with PID 17436 (C:\Users\sas\Documents\cogna-sentiment-analysis\agent\mkt-agent-sdk-2.2402.2401171453\lib\mkt-agent-springboot-2.2402.2401171453-plain.jar started by sas in C:\Users\sas\Documents\cogna-sentiment-analysis\agent\mkt-agent-sdk-2.2402.2401171453\bin)
+2024-03-26 08:21:27,935 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.Application - The following 1 profile is active: "agent"
+2024-03-26 08:21:32,145 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.Application - Started Application in 4.944 seconds (JVM running for 6.018)
+2024-03-26 08:21:32,274 INFO  [main] com.sas.mkt.apigw.sdk.streaming.agent.AgentSystemManager - *** Agent System Manager (ASM) startup() ***
+2024-03-26 08:21:32,499 INFO  [main] .streaming.agent.listener.stream.ConfigurationEventProcessor - Agent remote configuration enabled
+2024-03-26 08:24:26,558 INFO  [main] .streaming.agent.listener.stream.ConfigurationEventProcessor - This Agent is set for *remote* configuration.
+2024-03-26 08:24:26,721 INFO  [ionShutdownHook] com.sas.mkt.apigw.sdk.streaming.agent.AgentSystemManager - *** Agent System Manager (ASM) shutdown() ***
+2024-03-26 08:24:26,797 INFO  [ASMExecutor-13] com.sas.mkt.apigw.sdk.streaming.agent.AgentSystemManager - *** Agent System Manager (ASM) successful shutdown. ***
+2024-03-26 08:24:27,771 ERROR [main] as.mkt.apigw.sdk.streaming.agent.config.ConfigurationService - Remote configuration of the Direct Marketing plugin has failed.

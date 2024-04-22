@@ -1,0 +1,27 @@
+{
+	"eventStreamProcessingToCustomerIntelligenceStream": [
+		{
+			"eventName": "load",
+			"eventStreamProcessingWindow": "projectA/queryB/windowC",
+			"eventStreamProcessingMappings": {
+				"ID": "timestamp",
+				"pubStr": "event_channel",
+				"pubDate": "date",
+				"pubDouble": "value",
+				"pubInt64": "amount",
+				"putTime": "time"
+			}
+		}, {
+			"eventName": "click",
+			"eventStreamProcessingWindow": "projectA/queryB/windowC",
+			"eventStreamProcessingMappings": {
+				"ID": "timestamp",
+				"pubStr": "event_channel",
+				"pubDate": "date",
+				"pubDouble": "value",
+				"pubInt64": "amount",
+				"putTime": "time"
+			}
+		}
+	]
+}

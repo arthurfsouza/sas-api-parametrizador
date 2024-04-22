@@ -1,0 +1,4 @@
+#set JAVA_HOME to root of the Java 11 installation on this machine
+JAVA_HOME=<Installation directory of Java 11>
+
+JAVA_OPTS=-Dagent.shell.enable=false

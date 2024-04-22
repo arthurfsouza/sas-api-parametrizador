@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- scan this file for configuration changes every minute -->
+<!-- change the scan period with: <configuration scan="true" scanPeriod="30 seconds" > -->
+<configuration scan="true">
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{ISO8601} %-5p [%-4.15t] %-40.60c - %m%n</pattern>
+      <charset>UTF-8</charset>
+    </encoder>
+  </appender>
+  <appender name="SAS_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!--See also http://logback.qos.ch/manual/appenders.html#RollingFileAppender -->
+    <file>${APP_HOME}/logs/sas.mkt.apigw.sdk.log</file>
+    <append>true</append>
+    <encoder>
+      <pattern>%d{ISO8601} %-5p [%-4.15t] %-40.60c - %m%n</pattern>
+      <charset>UTF-8</charset>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+      <maxIndex>4</maxIndex>
+      <FileNamePattern>${APP_HOME}/logs/sas.mkt.apigw.sdk.log.%i
+      </FileNamePattern>
+    </rollingPolicy>
+    <triggeringPolicy
+      class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+      <maxFileSize>20MB</maxFileSize>
+    </triggeringPolicy>
+  </appender>
+  <logger name="com.sas" level="INFO">
+  </logger>
+  <logger name="org.springframework" level="WARN">
+  </logger>
+  <logger name="org.apache" level="INFO">
+  </logger>
+  <root level="WARN">
+    <!--  <appender-ref ref="CONSOLE" /> -->
+    <appender-ref ref="SAS_FILE" />
+  </root>
+</configuration>
