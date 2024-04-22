@@ -34,16 +34,6 @@ class RequestFOLDER:
                 "Authorization": "Bearer " + self._token
             }
 
-            bodyFOLDER = {
-                "inputs":
-                    [
-                        {
-                            "name": "entry_json_",
-                            "value": self._entry_json
-                        }
-                    ]
-            }
-
             try:
                 response = requests.post(
                     urlFOLDER,
