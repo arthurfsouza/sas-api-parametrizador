@@ -51,56 +51,56 @@ def index():
 
         return jsonify({"folder_status": folder_status, "folder_response": folder_response})
 
-@app.route("/", methods=["GET", "POST"])
-def index():
-    logging_config()
+# @app.route("/", methods=["GET", "POST"])
+# def index():
+#     logging_config()
 
-    if request.method == "POST":
-        name = request.form["nome"]
-        phone_num = request.form["numero"]
-        email = request.form["email"]
-        comment = request.form["comentario"]
+#     if request.method == "POST":
+#         name = request.form["nome"]
+#         phone_num = request.form["numero"]
+#         email = request.form["email"]
+#         comment = request.form["comentario"]
 
-        logging.info(f"comment: {comment}")
+#         logging.info(f"comment: {comment}")
 
-        base_url = "http://13.90.73.61"
-        username = "ci_client_2"; password = "Orion123"
+#         base_url = "http://13.90.73.61"
+#         username = "ci_client_2"; password = "Orion123"
 
-        request_tk = RequestToken(base_url, username, password, by_user=False)
-        tk_response, tk_status = request_tk.return_token()
+#         request_tk = RequestToken(base_url, username, password, by_user=False)
+#         tk_response, tk_status = request_tk.return_token()
 
-        logging.info(f"TOKEN status: {tk_status}")
-        logging.info(f"TOKEN response: {tk_response}")
+#         logging.info(f"TOKEN status: {tk_status}")
+#         logging.info(f"TOKEN response: {tk_response}")
 
-        if not tk_response or tk_status != 200:
-            logging.info(f"could not create tk_response entity!")
-            return jsonify({"token_status": tk_status, "token_response": tk_response}) #criar uma pagina pra esse erro
+#         if not tk_response or tk_status != 200:
+#             logging.info(f"could not create tk_response entity!")
+#             return jsonify({"token_status": tk_status, "token_response": tk_response}) #criar uma pagina pra esse erro
 
-        decision_name = "sentiment_analysis_decision"
+#         decision_name = "sentiment_analysis_decision"
 
-        entry_json = {
-            "name": name,
-            "phone_num": phone_num,
-            "email": email,
-            "comment": comment
-        }
+#         entry_json = {
+#             "name": name,
+#             "phone_num": phone_num,
+#             "email": email,
+#             "comment": comment
+#         }
 
-        request_sid = RequestSID(base_url, tk_response, decision_name, json.dumps(entry_json))
-        sid_response, sid_status = request_sid.return_sid()
+#         request_sid = RequestSID(base_url, tk_response, decision_name, json.dumps(entry_json))
+#         sid_response, sid_status = request_sid.return_sid()
 
-        logging.info(f"base_url: {base_url}/microanalyticScore/modules/{decision_name}/steps/execute")
-        logging.info(f"SID status: {sid_status}")
-        logging.info(f"SID response: {sid_response}")
+#         logging.info(f"base_url: {base_url}/microanalyticScore/modules/{decision_name}/steps/execute")
+#         logging.info(f"SID status: {sid_status}")
+#         logging.info(f"SID response: {sid_response}")
 
-        if not sid_response or sid_status != 201:
-            logging.info(f"could not create SID entity!")
-            return jsonify({"sid_status": sid_status, "sid_response": sid_response}) #criar uma pagina pra esse erro
+#         if not sid_response or sid_status != 201:
+#             logging.info(f"could not create SID entity!")
+#             return jsonify({"sid_status": sid_status, "sid_response": sid_response}) #criar uma pagina pra esse erro
 
-        # Retornar uma mensagem de confirmação para o usuário
-        return render_template("retorno.html", name=name, comment=sid_response.get("comment_score"))
-    elif request.method == "GET":
-        # Renderizar o template do formulário
-        return render_template("formulario.html")
+#         # Retornar uma mensagem de confirmação para o usuário
+#         return render_template("retorno.html", name=name, comment=sid_response.get("comment_score"))
+#     elif request.method == "GET":
+#         # Renderizar o template do formulário
+#         return render_template("formulario.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
